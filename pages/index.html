@@ -15,128 +15,288 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
+
     <div class="container-fluid">
-        <!--三張照片輪播-->
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../assets/images/index-photo-1(1920x800).png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block text-white top-50">
-                <h2 class="h1 text-white">背上背包，說走就走！</h2>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/images/index-photo-2(1920x800).png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block text-white top-50">
-                <h2 class="h1 text-white">背上背包，說走就走！</h2>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/images/index-photo-3(1920x800).png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block text-white top-50">
-                <h2 class="h1 text-white">背上背包，說走就走！</h2>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+      <!--三張照片輪播-->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <!--三張照片輪播END-->
-        <!--商品推薦--> 
-        <h2 class="fs-5 pt-3 text-center">
-              商品推薦
-        </h2>
-        <!--商品推薦END-->
-
-        <!-- Swiper -->
-        <div class="swiper mySwiper py-3">
-          <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <div class="card">
-                      <div class="card-img-container">
-                          <img src="../assets/images/index-Sigapore.jpg" alt="Singapore">
-                          <div class="rating text-warning">4.7/5</div>
-                      </div>
-                      <div class="card-body">
-                          <h5 class="card-title d-flex">新加坡 Singapore
-                            <i class="bi bi-heart ms-auto"></i></h5>
-                          <small class="fs-6 card-text text-black-50">新加坡是一個獨立有文化的城市，蘊含歷史價值及多元民族文化，是熱門旅遊地點之一。</small>
-                          <p class="price">NT$ 28,000 / 人</p>
-                          <div class="card-footer d-flex">
-                            <i class="bi bi-suitcase-lg fs-4 me-3"></i>
-                            <button type="button" class="btn btn-success btn-sm w-100 text-white"> 
-                            查看更多
-                          </button>
-                          </div>   
-                      </div>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                  <div class="card">
-                      <div class="card-img-container">
-                          <img src="../assets/images/index-Sigapore.jpg" alt="Thailand">
-                          <div class="rating text-warning">4.7/5</div>
-                      </div>
-                      <div class="card-body">
-                          <h5 class="card-title d-flex">泰國 Thailand
-                            <i class="bi bi-heart ms-auto"></i></h5>
-                          <p class="card-text">泰國以其多元的旅遊景點而著稱...</p>
-                          <p>NT$ 26,000 / 人</p>
-                          <div class="card-footer d-flex">
-                            <i class="bi bi-suitcase-lg fs-4 me-3"></i>
-                            <button type="button" class="btn btn-success btn-sm w-100 text-white"> 
-                            查看更多
-                            </button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                  <div class="card">
-                      <div class="card-img-container">
-                          <img src="../assets/images/index-Sigapore.jpg" alt="Vietnam">
-                          <div class="rating text-warning">4.7/5</div>
-                      </div>
-                      <div class="card-body">
-                          <h5 class="card-title">越南 Vietnam</h5>
-                          <p class="card-text">越南擁有壯麗的自然景觀和豐富的歷史文化...</p>
-                          <p class="price">NT$ 18,000 / 人</p>
-                          <div class="card-footer d-flex">
-                            <i class="bi bi-suitcase-lg fs-4 me-3"></i>
-                            <button type="button" class="btn btn-success btn-sm w-100 text-white"> 
-                            查看更多
-                          </button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/images/index-photo-1(1920x800).png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-white top-50">
+              <h2 class="h1 text-white ">背上背包，說走就走！</h2>
+            </div>
           </div>
-          <!-- 導航箭頭 -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="carousel-item">
+            <img src="../assets/images/index-photo-2(1920x800).png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-white top-50">
+              <h2 class="h1 text-white">背上背包，說走就走！</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/index-photo-3(1920x800).png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-white top-50">
+              <h2 class="h1 text-white">背上背包，說走就走！</h2>
+            </div>
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--三張照片輪播END-->
 
-      
-        <!--CARD END-->
+      <!--商品推薦--> 
+      <h2 class="fs-5 pt-3 text-center">
+            商品推薦
+      </h2>
+      <!--商品推薦END-->
 
-        
-        
+      <!-- Swiper -->
+      <div class="swiper mySwiper py-3">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../assets/images/index-Sigapore.jpg" alt="Singapore">
+                        <div class="rating text-warning">4.7/5</div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title d-flex">新加坡 Singapore
+                          <i class="bi bi-heart ms-auto"></i></h5>
+                        <small class="fs-6 card-text text-black-50">新加坡是一個獨立有文化的城市，蘊含歷史價值及多元民族文化，是熱門旅遊地點之一。</small>
+                        <p class="price">NT$ 28,000 / 人</p>
+                        <div class="card-footer d-flex">
+                          <i class="bi bi-suitcase-lg fs-4 me-3"></i>
+                          <button type="button" class="btn btn-success btn-sm w-100 text-white"> 
+                          查看更多
+                        </button>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../assets/images/index-Sigapore.jpg" alt="Thailand">
+                        <div class="rating text-warning">4.7/5</div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title d-flex">泰國 Thailand
+                          <i class="bi bi-heart ms-auto"></i></h5>
+                        <p class="card-text">泰國以其多元的旅遊景點而著稱...</p>
+                        <p>NT$ 26,000 / 人</p>
+                        <div class="card-footer d-flex">
+                          <i class="bi bi-suitcase-lg fs-4 me-3"></i>
+                          <button type="button" class="btn btn-success btn-sm w-100 text-white"> 
+                          查看更多
+                          </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../assets/images/index-Sigapore.jpg" alt="Vietnam">
+                        <div class="rating text-warning">4.7/5</div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">越南 Vietnam</h5>
+                        <p class="card-text">越南擁有壯麗的自然景觀和豐富的歷史文化...</p>
+                        <p class="price">NT$ 18,000 / 人</p>
+                        <div class="card-footer d-flex">
+                          <i class="bi bi-suitcase-lg fs-4 me-3"></i>
+                          <button type="button" class="btn btn-success btn-sm w-100 text-white"> 
+                          查看更多
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 導航箭頭 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>       
+  </div>
 
+      <!--三張漸層照片-->
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="image-container position-relative">
+                        <img src="../assets/images/index-pg1.png" alt="海灘假期">
+                        <div class="gradient-overlay gradient-overlay-bg1"></div>
+                    </div>
+                    <div class="position-absolute ms-2 mt-2 top-0 start-0 text-white text-start">
+                        <p class="fs-5">上班不請假</p>
+                        <p class="fs-6 text-white-50">就想Chill一下</p>
+                        <p class="vr"></p>
+                        <p class="fs-6 me-2">海灘假期</p>
+                    </div>
+                </div>
+            </div>
 
-    </div>
-    <%- include('./layout/footer'); -%>
-      <!-- Swiper JS -->
+            <!-- Card 2 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="../assets/images/index-pg2.png" alt="文化體驗">
+                        <div class="gradient-overlay gradient-overlay-bg2"></div>
+                    </div>
+                    <div class="position-absolute ms-2 mt-2 top-0 start-0 text-white text-start">
+                      <p class="fs-5">最近不太順</p>
+                      <p class="fs-6 text-white-50">求拜四面佛</p>
+                      <p class="vr"></p>
+                      <p class="fs-6 mt-auto">文化體驗</p>
+                    </div> 
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="../assets/images/index-pg3.png" alt="美食饗宴">
+                        <div class="gradient-overlay gradient-overlay-bg3"></div>
+                    </div>
+                    
+                    <div class="position-absolute ms-2 mt-2 top-0 start-0 text-white text-start">
+                      <p class="fs-5">突然好想吃</p>
+                      <p class="fs-6 text-white-50">道地咖哩麵</p>
+                      <p class="vr"></p>
+                      <p class="fs-6 mt-auto">美食饗宴</p>
+                    </div> 
+                    
+                </div>
+            </div>
+        </div>
+      </div>
+      <!--三張漸層照片END-->
+
+      <!--立即註冊-->
+      <a href=""><h2 class="fs-5 pt-5 text-dark text-center">
+        立即註冊VoySEA
+      </h2></a>
+      <p class="fs-6 pt-1 pb-3 text-black-50 text-center">
+        給你最尊榮體驗
+      </p>
+
+      <!--會員專屬-->
+      <div class="nav-list row py-3">
+        <div class="btn btn-success col-md-8">
+          <div class="d-flex justify-content-end text-center gx-5">
+            <div class="me-2">
+              <button type="button" class="btn btn-primary w-100 text-white">會員專屬</button>  
+            </div>
+
+            <div class="text-start text-white">
+              <p class="fs-5 me-3">加入送旅遊購物金</p>
+              <p class="fs-6 me-3">註冊會員即送500元購物金</p>
+              <p class="fs-6 me-3">結帳再享3%點數回饋</p>
+            </div>
+            <div>
+              <img src="../assets/images/index-bg-money.svg" alt="">
+            </div>
+          </div>   
+        </div>
+        <div class="col-md-4">   
+        </div>   
+      </div>
+
+      <!--獨享價格-->
+      <div class="nav-list row py-3">
+        <div class="col-md-4">   
+        </div>
+        <div class="btn btn-success col-md-8">
+          <div class="d-flex gx-5">
+            <div class="me-2 text-center">
+              <button type="button" class="btn btn-primary text-white mb-5">獨享價格</button>  
+            </div>
+            
+            <div class="text-start text-white">
+              <button type="button" class="btn btn-primary text-white mb-3 me-3">
+                <i class="bi bi-dot"></i>
+                優惠價格再下殺</button>  
+              <button type="button" class="btn btn-primary text-white mb-3">
+                <i class="bi bi-dot"></i>
+                生日會員折扣</button>
+              </br>
+              <button type="button" class="btn btn-primary text-white mb-3">
+                <i class="bi bi-dot"></i>
+                專屬活動提前通知</button>  
+            </div>
+          </div>   
+        </div>
+           
+      </div>
+
+      <!--專屬推薦-->
+      <div class="nav-list row py-3">
+        <div class="btn btn-success col-md-8">
+          <div class="d-flex justify-content-center text-center gx-5 position-relative">
+            <div class="me-2">
+              <button type="button" class="btn btn-primary w-100 text-white">專屬推薦</button>  
+            </div>
+
+            <div class="text-start text-white">
+              <p class="fs-5 me-3">專屬推薦旅程規劃</p>
+              <p class="fs-6 me-3">依您的喜好推薦旅程選擇</p>
+            </div>
+            <div class="position-absolute bottom-10 end-0">
+              <img src="../assets/images/index-bg-arrow.svg" alt="">
+            </div>
+          </div>   
+        </div>
+        <div class="col-md-4">   
+        </div>   
+    
+      </div>
+
+      <!--收蔵一覽-->
+      <div class="nav-list row py-3">
+        <div class="col-md-4">   
+        </div>
+        <div class="btn btn-success col-md-8">
+          <div class="d-flex justify-content-start text-center gx-5">
+            <div class="me-2">
+              <button type="button" class="btn btn-primary text-white">收蔵一覽</button>  
+            </div>
+            <div class="text-start text-white">
+              <p class="fs-5 me-3">專屬收藏內容</p>
+              <p class="fs-6 me-3">關鍵字搜尋收藏旅程</p>
+              <p class="fs-6 me-3">訂單清楚查找</p>
+            </div>
+            <div>
+              <img src="../assets/images/index-bg-list.svg" alt="">
+            </div>
+          </div>   
+        </div>         
+      </div>
+
+      <!---->
+      <div class="container-fluid mt-3 text-center">
+        <p>無論你是尋求冒險、文化探索、還是純粹的放鬆，東南亞都能為您提供多樣化的旅遊選擇</p>
+      </div>
+
+      <!--馬上加入-->
+      <div class="text-center p-5">
+        <button type="button" class="btn btn-success btn-lg text-white mx-5">馬上加入</button>
+      </div>
+
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!-- 初始化 Swiper -->
@@ -155,15 +315,16 @@
             slidesPerView: 1, // 在小螢幕上顯示一個
           },
           768: {
-            slidesPerView: 2, // 在平板上顯示兩個
+            slidesPerView: 3, // 在平板上顯示兩個
           },
           1024: {
-            slidesPerView: 3, // 在桌面上顯示三個
+            slidesPerView: 4, // 在桌面上顯示三個
           },
         },
       });
     </script>
-
     <script type="module" src="../main.js"></script>
   </body>
+
+  <%- include('./layout/footer'); -%>
 </html>
