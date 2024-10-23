@@ -8,7 +8,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>商品頁</title>
+    <title>泰國潑水節（songkaran）之旅-VoySEA</title>
 </head>
 
 <body>
@@ -65,6 +65,35 @@
 
 
 </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <!-- 初始化 Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,      // 一次顯示三個滑塊
+            spaceBetween: 10,      // 每個滑塊之間的間距
+            centeredSlides: true,  // 將活動滑塊置於中間
+            loop: true,            // 循環播放
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1, // 在小螢幕上顯示一個
+                },
+                768: {
+                    slidesPerView: 3, // 在平板上顯示兩個
+                },
+                1024: {
+                    slidesPerView: 4, // 在桌面上顯示三個
+                },
+            },
+        });
+    </script>
 
         <script type="module" src="../main.js"></script>
 </body>
