@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+    <div class="container-fluid">
+        
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li>
+          <span class="material-symbols-outlined ">
+            house</span></li>
+          <li class="breadcrumb-item  ms-1"> > 我的帳戶</li>
+          <li class="breadcrumb-item active" aria-current="page">會員獨享</li>
+        </ol>
+      </nav>
+    
+      <section class="row justify-content-center">
+        <div class="col-md-4">
+          <img src="../assets/images/login-special.png" alt="" class="w-100">
+        </div>
+        <div class="col-md-5">
+          <div class="fs-3 text-success py-3">VoySEA享回饋</div>
+          <div class="input-group mb-3">
+            <span class="input-group-text fs-3">我的點數</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text fs-3">點</span>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text fs-3">總消費金額</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text fs-3">元</span>
+          </div>
+      </section>
+          
+          <section class="row pt-5">
+              <h3 class="col-md-12 text-center bg-success py-3">會員獨享</h3>
+          </section>
+          
+          <div class="row px-5 py-0 justify-content-center">
+              <div class="col-md-12 text-center py-3">
+                <div class="row">
+                  <div class="col">
+                    <div class="p-3 border text-danger bg-light rounded-pill text-center">訂房享折扣9折</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border text-danger bg-light rounded-pill text-center">行程優先通知</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border text-danger bg-light rounded-pill text-center">一對一專人諮詢</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border text-danger bg-light rounded-pill text-center">生日禮</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border text-danger bg-light rounded-pill text-center">首訂送300點</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <!--專屬行程-->
+            <div class="col-md-8">
+              <h3 class="text-center mb-3">專屬行程</h3>
+              <!--新加坡-->
+              <div class="row g-5 mb-3">
+                <div class="col-md-4">
+                  <img src="../assets/images/search-Sigapore.png" class="img-fluid" alt="Singapore">
+                </div>
+                <div class="col-md-6">
+                  <h3>新加坡</h3>
+                  <p>新加坡是一個充滿活力和多元文化的城市，有許多值得一遊的景點。濱海灣花園：這裡有著名的超級樹、花穹和雲霧林，是新加坡的地標之一</p>
+                  <p>NT$30,000</p>
+                </div>
+                <div class="col-md-2 d-flex align-items-center justify-content-center bg-primary">
+                  <div class="cart-icon">
+                    <a href=""><i class="bi bi-cart-plus fs-1 text-white"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <!--泰國-->
+              <div class="row g-5 mb-3">
+                <div class="col-md-4">
+                  <img src="../assets/images/search-Thailand.png" class="img-fluid" alt="Singapore">
+                </div>
+                <div class="col-md-6">
+                  <h3>泰國</h3>
+                  <p>這裡擁有絕美的海灘和清澈的海水，適合享受陽光和放鬆的度假時光，品味當地的特色小吃</p>
+                  <p>NT$30,000</p>
+                </div>
+                <div class="col-md-2 d-flex align-items-center justify-content-center  bg-primary">
+                  <div class="cart-icon">
+                    <a href=""><i class="bi bi-cart-plus fs-1 text-white"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <!--越南-->
+              <div class="row g-5 mb-3">
+                <div class="col-md-4">
+                  <img src="../assets/images/search-Sigapore.png" class="img-fluid" alt="Singapore">
+                </div>
+                <div class="col-md-6">
+                  <h3>越南</h3>
+                  <p>新這座被列為世界遺產的小鎮，以其保存完好的古老建築和燈籠文化聞名，是感受越南文化的絕佳之地</p>
+                  <p>NT$30,000</p>
+                </div>
+                <div class="col-md-2 d-flex align-items-center justify-content-center bg-primary">
+                  <div class="cart-icon">
+                    <a href=""><i class="bi bi-cart-plus fs-1 text-white"></i></a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!--領取折扣-->
+            <div class="col-md-4">
+              <h3 class="text-center mb-3">領取折扣碼</h3>
+              <h4 class="text-center mb-3">2024年11月</h4>
+
+              <!--表格選單Discount2024-->
+              <div class="card mb-3">
+                  <div class="row g-1">
+                    <div class="col-4">
+                      <img src="../assets/images/login-special.png" class="img-fluid rounded-start w-100" alt="...">
+                    </div>
+                    <div class="col-5">
+                      <div>
+                        <h5 class="text-danger">Discount2024</h5>
+                        <p class="text-start">會員限時8折</p>
+                        <small class="text-muted">即日起-11/30</small>
+                      </div>
+                    </div>
+                    <div class="col-3 bg-success d-flex align-items-center justify-content-center">
+                      <div class="card-footer text-center">
+                        <a href="#" class="text-white fs-4">領取</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <!--表格選單Happy202408-->
+              <div class="card mb-3">
+                <div class="row g-1">
+                  <div class="col-4">
+                    <img src="../assets/images/login-special.png" class="img-fluid rounded-start w-100" alt="...">
+                  </div>
+                  <div class="col-5">
+                    <div>
+                      <h5 class="text-danger">Happy202411</h5>
+                      <p class="text-start">生日優惠85折</p>
+                      <small class="text-muted">即日起-11/30</small>
+                    </div>
+                  </div>
+                  <div class="col-3 bg-success d-flex align-items-center justify-content-center">
+                    <div class="card-footer text-center">
+                      <a href="#" class="text-white fs-4">領取</a>
+                    </div>
+                  </div>
+              </div>
+              </div>
+
+              <!--表格選單Hello1111-->
+              <div class="card mb-3">
+                <div class="row g-1">
+                  <div class="col-4">
+                    <img src="../assets/images/login-special.png" class="img-fluid rounded-start w-100" alt="...">
+                  </div>
+                  <div class="col-5">
+                    <div>
+                      <h5 class="text-danger">Hello1111</h5>
+                      <p class="text-start">雙11限時優惠</p>
+                      <small class="text-muted">即日起-11/11</small>
+                    </div>
+                  </div>
+                  <div class="col-3 bg-success d-flex align-items-center justify-content-center">
+                    <div class="card-footer text-center">
+                      <a href="#" class="text-white fs-4">領取</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--表格選單Discount202412-->
+              <div class="card mb-3">
+                <div class="row g-1">
+                  <div class="col-4">
+                    <img src="../assets/images/login-special.png" class="img-fluid rounded-start w-100" alt="...">
+                  </div>
+                  <div class="col-5">
+                    <div>
+                      <h5 class="text-danger">Discount202501</h5>
+                      <p class="text-start">早鳥優惠價</p>
+                      <small class="text-muted">即日起-12/1</small>
+                    </div>
+                  </div>
+                  <div class="col-3 bg-success d-flex align-items-center justify-content-center">
+                    <div class="card-footer text-center">
+                      <a href="#" class="text-white fs-4">領取</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            
+          </div>
+          
+          <!-- Swiper -->
+          <div class="swiper mySwiper py-3">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="../assets/images/index-Sigapore.jpg" alt="Singapore">
+                            <div class="rating text-warning">4.7/5</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title d-flex">新加坡 Singapore
+                              <i class="bi bi-heart ms-auto"></i></h5>
+                            <small class="fs-6 card-text text-black-50">新加坡是一個獨立有文化的城市，蘊含歷史價值及多元民族文化，是熱門旅遊地點之一。</small>
+                            <p class="price">NT$ 28,000 / 人</p>
+                            <div class="card-footer d-flex">
+                              <i class="bi bi-suitcase-lg fs-4 me-3"></i>
+                              <button type="button" class="btn btn-success btn-sm w-100 text-white"> 
+                              查看更多
+                            </button>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="../assets/images/index-Sigapore.jpg" alt="Thailand">
+                            <div class="rating text-warning">4.7/5</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title d-flex">泰國 Thailand
+                              <i class="bi bi-heart ms-auto"></i></h5>
+                            <p class="card-text">泰國以其多元的旅遊景點而著稱...</p>
+                            <p>NT$ 26,000 / 人</p>
+                            <div class="card-footer d-flex">
+                              <i class="bi bi-suitcase-lg fs-4 me-3"></i>
+                              <button type="button" class="btn btn-success btn-sm w-100 text-white"> 
+                              查看更多
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="../assets/images/index-Sigapore.jpg" alt="Vietnam">
+                            <div class="rating text-warning">4.7/5</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">越南 Vietnam</h5>
+                            <p class="card-text">越南擁有壯麗的自然景觀和豐富的歷史文化...</p>
+                            <p class="price">NT$ 18,000 / 人</p>
+                            <div class="card-footer d-flex">
+                              <i class="bi bi-suitcase-lg fs-4 me-3"></i>
+                              <button type="button" class="btn btn-success btn-sm w-100 text-white"> 
+                              查看更多
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 導航箭頭 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>                    
+          
+          <!--馬上加入-->
+          <div class="text-center p-5">
+            <button type="button" class="btn btn-success btn-lg text-white mx-5">登出</button>
+          </div>
+                    
+
+        </div>
+
+      </section>
+
+    </div>
+          
+        
+
+        
+        
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- 初始化 Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,      // 一次顯示三個滑塊
+        spaceBetween: 10,      // 每個滑塊之間的間距
+        centeredSlides: true,  // 將活動滑塊置於中間
+        loop: true,            // 循環播放
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1, // 在小螢幕上顯示一個
+          },
+          768: {
+            slidesPerView: 3, // 在平板上顯示兩個
+          },
+          1024: {
+            slidesPerView: 4, // 在桌面上顯示三個
+          },
+        },
+      });
+    </script>     
+       
+    <script type="module" src="../main.js"></script>
+</body>
+
+<%- include('./layout/footer'); -%>
+</html>

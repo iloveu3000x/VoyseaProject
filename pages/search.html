@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+    <div>
+      <img src="../assets/images/search-photo(1920x800).png" alt="" class="w-100">
+    </div>
+
+    <div class="container-fluid">
+        <section class="d-flex py-5">
+            
+            <span class="material-symbols-outlined ">
+                    house</span>
+            <h2 class="fs-5 pe-5"><a href="#">  > 商品搜尋 </a></h2>
+            
+        </section>
+        
+        <div class="row">
+  <!--左邊版面-->
+            <div class="col-md-4">
+                <h2>分類</h2>
+                <!--選擇國家-->
+                <div class="demo p-1">
+                    <div class="dropdown d-grid px-1">
+                      <a class="btn btn-outline-secondary dropdown-toggle btn-lg text-start" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        選擇國家
+                      </a>
+                      
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                </div>
+                <!--選擇國家END-->
+                <!--選擇景點-->
+                  <div class="demo p-1">
+                    <div class="dropdown d-grid px-1">
+                      <a class="btn btn-outline-secondary dropdown-toggle btn-lg text-start" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        選擇景點
+                      </a>
+                      
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                <!--選擇景點END-->
+                <!--價格預算-->
+           
+                <!--價格預算標題-->
+                <h4 class="p-1">價格預算
+                <i class="bi bi-sliders"></i>
+                </h4>
+            
+                <!--價格預算範圍range-->
+                <div class="row g-0">
+                  <div class="col">
+                  <label for="customRange1" class="form-label text-center"></label>
+                  <input type="range" class="form-range" id="customRange1"> 
+                  </div>
+                  <div class="col">
+                  <label for="customRange1" class="form-label text-center"></label>
+                  <input type="range" class="form-range" id="customRange1"> 
+                  </div>
+                </div> 
+                <!--價格預算表格-->
+                <form class="row g-3 mb-5">
+                  <div class="col">
+                    <label for="inputBelow" class="form-label">以下</label>
+                    <input type="number" class="form-control" id="inputBelow" placeholder="NT$">
+                  </div>
+                  <div class="col">
+                    <label for="inputOver" class="form-label">以上</label>
+                    <input type="number" class="form-control" id="inputOver" placeholder="NT$">
+                  </div>
+                </form>
+            <!--價格預算END-->
+            <!--天數-->
+            <div>
+                <h4 class="px-1">天數
+                <i class="bi bi-sliders"></i>
+                </h4>
+            </div> 
+            <div class="row g-0">
+              <div class="col">
+                <label for="inputDayBelow" class="form-label text-center"></label>
+                <input type="range" class="form-range" id="inputDayBelow"> 
+              </div>
+              <div class="col">
+                <label for="inputDayOver" class="form-label text-center"></label>
+                <input type="range" class="form-range my-0" id="inputDayOver"> 
+              </div>
+
+            </div>    
+            <form class="row g-5 mb-5">
+              <div class="col"> 
+                <input type="text" class="form-control text-center rounded-pill" id="inputBelow" placeholder="3天以下">
+              </div>
+              <div class="col">             
+                <input type="text" class="form-control text-center rounded-pill" id="inputOver" placeholder="5天">
+              </div>
+            </form>
+            <!--天數END-->
+            <!--篩選條件--> 
+            <div class="d-flex justify-content-between p-1">
+                <h4>篩選條件</h4>
+                <h5 class="text-success text-end align-self-end fs-6">清除篩選</h5>
+            </div> 
+            <div class="form-check mb-4 border-secondary">
+              <input class="form-check-input" type="checkbox" value="" id="check1_5points">
+              <label class="form-check-label" for="check1_5points">
+                     好評5以上
+              </label>
+            </div>
+            <div class="form-check mb-4 border-secondary">
+              <input class="form-check-input" type="checkbox" value="" id="check2_beach">
+              <label class="form-check-label" for="check2_beach">
+                     海灘
+              </label>
+            </div>
+            <div class="form-check mb-4 border-secondary">
+              <input class="form-check-input" type="checkbox" value="" id="check3_mountain">
+              <label class="form-check-label" for="check3_mountain">
+                     高山
+              </label>
+            </div>
+            <div class="form-check mb-4 border-secondary">
+              <input class="form-check-input" type="checkbox" value="" id="check4_food">
+              <label class="form-check-label" for="check4_food">
+                     美食之旅
+              </label>
+            </div>
+            <div class="form-check mb-4 border-secondary">
+              <input class="form-check-input" type="checkbox" value="" id="check5_culture">
+              <label class="form-check-label" for="check5_culture">
+                     文化
+              </label>
+            </div>
+            <div class="form-check mb-4 border-secondary">
+              <input class="form-check-input" type="checkbox" value="" id="check6_landmark">
+              <label class="form-check-label" for="check6_landmark">
+                     景點地標
+              </label>
+            </div>
+            <div class="form-check mb-4 border-secondary">
+              <input class="form-check-input" type="checkbox" value="" id="check7_halfday">
+              <label class="form-check-label" for="check7_halfday">
+                     半日遊
+              </label>
+            </div>
+            <div class="form-check mb-4 border-secondary">
+              <input class="form-check-input" type="checkbox" value="" id="check8_oneday">
+              <label class="form-check-label" for="check8_oneday">
+                     一日遊
+              </label>
+            </div>
+            <div class="form-check mb-4 border-secondary">
+              <input class="form-check-input" type="checkbox" value="" id="check9_bybus">
+              <label class="form-check-label" for="check9_bybus">
+                     巴士旅遊
+              </label>
+            </div>
+            <div class="form-check mb-4 border-secondary">
+              <input class="form-check-input" type="checkbox" value="" id="check10_byfoot">
+              <label class="form-check-label" for="check10_byfoot">
+                     步行旅遊
+              </label>
+            </div>
+            <div class="form-check mb-4 border-secondary">
+              <input class="form-check-input" type="checkbox" value="" id="check11_breakfast">
+              <label class="form-check-label" for="check11_breakfast">
+                     早餐
+              </label>
+            </div>
+            <div class="form-check mb-4 border-secondary">
+              <input class="form-check-input" type="checkbox" value="" id="check12_lunch">
+              <label class="form-check-label" for="check12_lunch">
+                     午餐
+              </label>
+            </div>
+            <div class="form-check mb-4 border-secondary">
+              <input class="form-check-input" type="checkbox" value="" id="check13_dinner">
+              <label class="form-check-label" for="check13_dinner">
+                     晚餐
+              </label>
+            </div>   
+            <!--篩選條件END-->
+            <!--熱門景點-->
+            <div class="btn-group dropend d-grid">
+              <button type="button" class="btn dropdown-toggle btn-lg text-start fs-4" data-bs-toggle="dropdown" aria-expanded="false">
+                熱門景點
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+              </ul>
+            </div>
+            <!--熱門景點END-->
+            <!--海灘假期-->
+            <div class="btn-group dropend d-grid">
+              <button type="button" class="btn dropdown-toggle btn-lg text-start fs-4" data-bs-toggle="dropdown" aria-expanded="false">
+                海灘假期
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+              </ul>
+            </div>
+            <!--海灘假期END-->
+            <!--景點地標-->
+            <div class="btn-group dropend d-grid">
+              <button type="button" class="btn dropdown-toggle btn-lg text-start fs-4" data-bs-toggle="dropdown" aria-expanded="false">
+                景點地標
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+              </ul>
+            </div>
+            <!--景點地標END-->
+            <!--美食之旅-->
+            <div class="btn-group d-grid">
+              <button class="btn dropdown-toggle btn-lg text-start fs-4" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                美食之旅
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+              </ul>
+            </div>
+            <!--美食之旅END-->
+
+            </div>    
+  <!--左邊版面END-->
+  <!--右邊版面-->
+            <div class="col-md-8">
+              
+              <!--篩選條件標籤-->
+              <div class="container">
+                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                  <div class="col">
+                    <div class="p-3 border text-success bg-light rounded-pill text-center">好評5以上</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border text-success bg-light rounded-pill text-center">海灘</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border text-success bg-light rounded-pill text-center">美食之旅</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border text-success bg-light rounded-pill text-center">半日遊</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border text-success bg-light rounded-pill text-center">巴士旅遊</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border text-success bg-light rounded-pill text-center">早餐</div>
+                  </div>
+                </div>
+              </div>
+              <!--篩選條件標籤END-->
+              <!--價格高到低,低到高-->
+              <div>
+                <h5 class="text-end mt-5 mb-3" >價格<a href="#">低到高
+                  <i class="bi bi-sort-up-alt"></i></a> 
+                  |<a href="#">高到低
+                  <i class="bi bi-sort-down-alt"></i></a>
+                </h5>
+              </div>
+              <!--價格高到低,低到高END-->
+              <!--各景點card-->
+              <div class="row g-2 mb-5">
+                <!--泰國-->
+                <div class="col-sm-8 col-md-6">
+                  <div class="card h-auto">
+                    <img src="../assets/images/search-Thailand.png" class="card-img-1 card-img-top" alt="...">
+                    <div class="card-body position-relative">
+                      <a href="product.html"><h5 class="card-title">泰國 <small>Thailand</small></h5></a>
+                      <p class="card-text text-start">泰國以其多元的旅遊景點而著稱,無論是古城清邁、熱鬧的曼谷,還是美麗的普吉島,每一處都充滿了獨特的魅力。清邁擁有眾多佛教寺廟和傳統市集.....</p>
+                      <p class="position-absolute bottom-0 end-0 mb-3 me-3">
+                          <i class="bi bi-star-fill text-warning"></i>
+                             4.7/5</p>
+                    </div>
+
+                    <div class="card-footer">
+                      <small class="text-muted">行程日期2024/09/09(日)
+                        <i class="text-inline bi bi-arrow-right-short"></i>
+                        2024/09/18(三). 4天</small>
+                      <!--價錢.購物車flex-->
+                      <div class="d-flex justify-content-between">
+                        <!--價錢-->
+                        <div>
+                            <small><del>NT$28,000/人</del></small>
+                            <p>NT$26,000/人</p>
+                            <p class="text-inline text-danger">
+                              <i class="bi bi-person-fill text-dark"></i> 
+                              NT$XXXX/人</p>                            
+                        </div>
+                        <!--價錢END-->
+                        <!--購物車圖示-->
+                        <div class="align-self-end">
+                        <i class="bi bi-cart-plus-fill"></i>
+                        <div class="btn-group dropend">
+                          <button type="button" class="btn btn-sm btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            more
+                          </button>
+                        </div>
+                        </div>
+                        <!--購物車圖示END-->
+                      </div>
+                      <!--價錢.購物車flexEND-->
+                    </div>
+                  </div>
+                </div>
+                <!--越南-->
+                <div class="col-sm-8 col-md-6">
+                  <div class="card h-100">
+                    <img src="../assets/images/search-Vietnam.png" class="card-img-1 card-img-top" alt="...">
+                    <div class="card-body position-relative">
+                      <h5 class="card-title">越南 <small>Vietnam</small></h5>
+                      <p class="card-text text-start">越南擁有壯麗的自然景觀和豐富的歷史文化。下龍灣被列為世界遺產,乘船遊覽其無數的石灰岩島嶼,令人流連忘返,胡志明市的摩登與古老交織....</p>
+                      <p class="position-absolute bottom-0 end-0 mb-3 me-3">
+                        <i class="bi bi-star-fill text-warning"></i>
+                           3/5</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">行程日期2024/09/09(日)
+                        <i class="text-inline bi bi-arrow-right-short"></i>
+                        2024/09/18(三). 4天</small>
+                      <!--價錢.購物車flex-->
+                      <div class="d-flex justify-content-between">
+                            <!--價錢-->
+                            <div>
+                            <small><del>NT$20,000/人</del></small>
+                            <p>NT$18,000/人</p>
+                            <p class="text-inline text-danger">
+                              <i class="bi bi-person-fill text-dark"></i> 
+                              NT$XXXX/人</p>
+                            </div>
+                            <!--價錢END-->
+                            <!--購物車圖示-->
+                            <div class="align-self-end">
+                              <i class="bi bi-cart-plus-fill"></i>
+                              <div class="btn-group dropend">
+                                <button type="button" class="btn btn-sm btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                  more
+                                </button>
+                              </div>
+                            </div>
+                            <!--購物車圖示END-->
+                      </div>
+                      <!--價錢.購物車flexEND-->
+                    </div>
+                  </div>
+                </div>
+                <!--新加坡-->
+                <div class="col-sm-8 col-md-6">
+                  <div class="card h-100">
+                    <img src="../assets/images/search-Sigapore.png" class="card-img-1 card-img-top" alt="...">
+                    <div class="card-body position-relative">
+                      <h5 class="card-title">新加坡 <small>Singapore</small></h5>
+                      <p class="card-text text-start">新加坡是一個充滿活力和多元文化的城市，有許多值得一遊的景點。濱海灣花園:這裡有著名的超級樹、花穹和雲霧林,是新加坡的地標之一......</p>
+                      <p class="position-absolute bottom-0 end-0 mb-3 me-3">
+                        <i class="bi bi-star-fill text-warning"></i>
+                           4.7/5</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">行程日期2024/09/09(日)
+                        <i class="text-inline bi bi-arrow-right-short"></i>
+                        2024/09/18(三). 4天</small>
+                      <!--價錢.購物車flex-->  
+                      <div class="d-flex justify-content-between">
+                        <div>
+                              <small><del>NT$28,000/人</del></small>
+                            <p>NT$26,000/人</p>
+                            <p class="text-inline text-danger">
+                              <i class="bi bi-person-fill text-dark"></i> 
+                              NT$XXXX/人</p>
+                        </div>
+                        <div class="align-self-end">
+                          <i class="bi bi-cart-plus-fill"></i>
+                          <div class="btn-group dropend">
+                            <button type="button" class="btn btn-sm btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              more
+                            </button>
+                          </div>
+                        </div>
+                      </div> 
+                      <!--價錢.購物車flexEND-->
+                    </div>
+                  </div>
+                </div>
+                <!--柬埔寨-->
+                <div class="col-sm-8 col-md-6">
+                  <div class="card h-100">
+                    <img src="../assets/images/search-Cambodia.png" class="card-img-1 card-img-top" alt="...">
+                    <div class="card-body position-relative">
+                      <h5 class="card-title">柬埔寨 <small>Cambodia</small></h5>
+                      <p class="card-text text-start">吳哥窟結合了高棉歷代廟宇建築的兩個基本的元素：立體廟山的多層方壇和平地廟宇的迴廊。吳哥窟中央的廟山由三層長方形有迴廊環繞的平台組成.....</p>
+                      <p class="position-absolute bottom-0 end-0 mb-3 me-3">
+                        <i class="bi bi-star-fill text-warning"></i>
+                           4.7/5</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">行程日期2024/09/09(日)
+                        <i class="text-inline bi bi-arrow-right-short"></i>
+                        2024/09/18(三). 4天</small>
+                      <!--價錢.購物車flex-->  
+                      <div class="d-flex justify-content-between">
+                        <!--價錢-->
+                        <div>
+                          <small><del>NT$28,000/人</del></small>
+                          <p>NT$26,000/人</p>
+                          <p class="text-inline text-danger">
+                            <i class="bi bi-person-fill text-dark"></i> 
+                            NT$XXXX/人</p>
+                        </div>
+                        <!--價錢END-->
+                        <!--購物車圖示-->
+                        <div class="align-self-end">
+                          <i class="bi bi-cart-plus-fill"></i>
+                          <div class="btn-group dropend">
+                            <button type="button" class="btn btn-sm btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              more
+                            </button>
+                          </div>
+                        </div>  
+                        <!--購物車圖示END-->
+                      </div>
+                      <!--價錢.購物車flexEND-->  
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--各景點card END-->
+            </div>
+  <!--右邊版面END-->
+        </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+</body>
+
+<%- include('./layout/footer'); -%>
+
+</html>
+
