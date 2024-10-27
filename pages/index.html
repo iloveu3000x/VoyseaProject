@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh_TW">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +11,7 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <title>index</title>
+    <title>南洋瘋遊趣</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -28,19 +28,19 @@
           <div class="carousel-item active">
             <img src="../assets/images/index-photo-1(1920x800).png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block text-white top-50">
-              <h2 class="h1 text-white ">背上背包，說走就走！</h2>
+              <a href="search.html"><h1 class="h1 text-white ">背上背包，說走就走！</h1></a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="../assets/images/index-photo-2(1920x800).png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block text-white top-50">
-              <h2 class="h1 text-white">背上背包，說走就走！</h2>
+              <a href="search.html"><h1 class="h1 text-white">背上背包，說走就走！</h1></u></a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="../assets/images/index-photo-3(1920x800).png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block text-white top-50">
-              <h2 class="h1 text-white">背上背包，說走就走！</h2>
+              <a href="search.html"><h1 class="h1 text-white">背上背包，說走就走！</h1></a>
             </div>
           </div>
         </div>
@@ -56,19 +56,94 @@
       <!--三張照片輪播END-->
 
       <!--商品推薦--> 
-      <h2 class="fs-5 pt-3 text-center">
-            商品推薦
-      </h2>
+      <div class="container my-5">
+        <h3 class="text-center">南洋風情</h3>
+        <div class="row py-5">
+    
+            <!-- Singapore Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../assets/images/search-Sigapore.png" class="card-img-top" alt="Thailand">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">新加坡 <small class="text-muted">Singapore</small></h5>
+                        <p class="card-text">
+                            新加坡是一個充滿活力的大都市，擁有無數的景點和活動。探索這座城市的現代建築、豪華購物和多元文化。
+                        </p>
+                        <a href="#" class="btn btn-success">More ></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Thailand Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../assets/images/search-Thailand.png" class="card-img-top" alt="Thailand">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">泰國 <small class="text-muted">Thailand</small></h5>
+                        <p class="card-text">
+                            泰國擁有美麗的海灘和豐富的文化遺產，帶來難以忘懷的旅行體驗。欣賞絕美的海景，享受地道的泰式美食。
+                        </p>
+                        <a href="intro-Thailand.html" class="btn btn-success">More ></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Vietnam Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../assets/images/search-Vietnam.png" class="card-img-top" alt="Thailand">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">越南 <small class="text-muted">Vietnam</small></h5>
+                        <p class="card-text">
+                            越南擁有壯麗的自然風光和豐富的文化景觀。探索其優美的海灘，並深入了解當地歷史和傳統。
+                        </p>
+                        <a href="#" class="btn btn-success">More ></a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>      
       <!--商品推薦END-->
+    
+    
+      </div>
 
-      
-    </div>
+    <!---->
+    <div class="container-fluid p-5 search-section">
+      <div class="row">
+          <!-- 圖片部分 -->
+          <div class="col-md-6 order-1 order-md-2">
+              <div class="image-wrapper">
+                  <img src="../assets/images/index-banner(636x478).png" alt="Voyage Image" class="img-fluid rounded">
+              </div>
+          </div>
+          <!-- 搜尋框部分 -->
+          <div class="col-md-6 position-relative order-2 order-md-1">
+              <div class="search-box p-4">
+                  <h2>現在，想去哪裡？</h2>
+                  <p>關鍵字搜尋 | 地區（泰國）、節慶（潑水節）</p>
+                  <div class="d-flex gap-2 mb-3 flex-wrap">
+                      <span class="badge rounded-pill bg-light text-dark"># 椰香吳哥窟</span>
+                      <span class="badge rounded-pill bg-light text-dark"># 清邁自由行</span>
+                      <span class="badge rounded-pill bg-light text-dark"># 漫遊峇里島</span>
+                  </div>
+                  <div class="input-group">
+                      <input type="text" class="form-control" placeholder="輸入目的地">
+                      <a href="intro-Thailand.html"><button class="btn btn-primary" type="button">搜尋</button></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!---->
 
       <!--三張漸層照片-->
       <div class="container mt-5">
         <div class="row justify-content-center">
             <!-- Card 1 -->
             <div class="col-md-3">
+              <a href="#">
                 <div class="card">
                     <div class="image-container position-relative">
                         <img src="../assets/images/index-pg1.png" alt="海灘假期">
@@ -78,13 +153,15 @@
                         <p class="fs-5">上班不請假</p>
                         <p class="fs-6 text-white-50">就想Chill一下</p>
                         <p class="vr"></p>
-                        <a href="#"><p class="fs-4 text-white me-2">海灘假期</p></a>
+                        <p class="fs-4 text-white me-2">海灘假期</p>
                     </div>
                 </div>
+              </a>
             </div>
 
             <!-- Card 2 -->
             <div class="col-md-3">
+              <a href="">
                 <div class="card">
                     <div class="image-container">
                         <img src="../assets/images/index-pg2.png" alt="文化體驗">
@@ -94,13 +171,15 @@
                       <p class="fs-5">最近不太順</p>
                       <p class="fs-6 text-white-50">求拜四面佛</p>
                       <p class="vr"></p>
-                      <a href=""><p class="fs-4 mt-auto text-white">文化體驗</p></a>
+                      <p class="fs-4 mt-auto text-white">文化體驗</p>
                     </div> 
                 </div>
+              </a>
             </div>
 
             <!-- Card 3 -->
             <div class="col-md-3">
+              <a href="">
                 <div class="card">
                     <div class="image-container">
                         <img src="../assets/images/index-pg3.png" alt="美食饗宴">
@@ -111,35 +190,38 @@
                       <p class="fs-5">突然好想吃</p>
                       <p class="fs-6 text-white-50">道地咖哩麵</p>
                       <p class="vr"></p>
-                      <a href=""><p class="fs-4 mt-auto text-white">美食饗宴</p></a>
+                      <p class="fs-4 mt-auto text-white">美食饗宴</p>
                     </div> 
                     
                 </div>
+              </a>
             </div>
         </div>
       </div>
       <!--三張漸層照片END-->
 
       <!--立即註冊-->
-      <a href=""><h2 class="fs-5 pt-5 text-dark text-center">
+      <a href="login.html"><h2 class="fs-5 pt-5 text-dark text-center">
         立即註冊VoySEA
-      </h2></a>
+      </h2>
       <p class="fs-6 pt-1 pb-3 text-black-50 text-center">
         給你最尊榮體驗
       </p>
+      </a>
 
       <!--會員專屬-->
+      <a href="login.html">
       <div class="nav-list row py-3">
         <div class="btn btn-success col-md-8">
-          <div class="d-flex justify-content-end text-center gx-5">
-            <div class="me-2">
+          <div class="d-flex justify-content-end text-align-center g-5 m-5">
+            <div>
               <button type="button" class="btn btn-primary w-100 text-white">會員專屬</button>  
             </div>
 
             <div class="text-start text-white">
-              <p class="fs-5 me-3">加入送旅遊購物金</p>
-              <p class="fs-6 me-3">註冊會員即送500元購物金</p>
-              <p class="fs-6 me-3">結帳再享3%點數回饋</p>
+              <p class="fs-5 mx-3">加入送旅遊購物金</p>
+              <p class="fs-6 mx-3">註冊會員即送500元購物金</p>
+              <p class="fs-6 mx-3">結帳再享3%點數回饋</p>
             </div>
             <div>
               <img src="../assets/images/index-bg-money.svg" alt="">
@@ -149,69 +231,73 @@
         <div class="col-md-4">   
         </div>   
       </div>
+      </a>
 
       <!--獨享價格-->
       <div class="nav-list row py-3">
         <div class="col-md-4">   
         </div>
         <div class="btn btn-success col-md-8">
-          <div class="d-flex gx-5">
-            <div class="me-2 text-center">
-              <button type="button" class="btn btn-primary text-white mb-5">獨享價格</button>  
-            </div>
-            
-            <div class="text-start text-white">
-              <button type="button" class="btn btn-primary text-white mb-3 me-3">
-                <i class="bi bi-dot"></i>
-                優惠價格再下殺</button>  
-              <button type="button" class="btn btn-primary text-white mb-3">
-                <i class="bi bi-dot"></i>
-                生日會員折扣</button>
-              </br>
-              <button type="button" class="btn btn-primary text-white mb-3">
-                <i class="bi bi-dot"></i>
-                專屬活動提前通知</button>  
-            </div>
-          </div>   
-        </div>
-           
+          <div class="row">
+              <div class="col-md-4">
+                <button type="button" class="btn btn-primary text-white">
+                  獨享價格</button>
+                  <img src="../assets/images/index-bg-memo.svg" alt="">
+              </div>      
+              <div class="col-md-8 text-white justify-content-start text-align-start">
+                <button type="button" class="btn btn-primary text-white m-3">
+                  <i class="bi bi-dot"></i>
+                  優惠價格再下殺</button>  
+                <button type="button" class="btn btn-primary text-white m-3">
+                  <i class="bi bi-dot"></i>
+                  生日會員折扣</button>
+                <button type="button" class="btn btn-primary text-white m-3">
+                  <i class="bi bi-dot"></i>
+                  專屬活動提前通知</button>  
+              </div>  
+          </div>
+        </div>             
       </div>
 
       <!--專屬推薦-->
-      <div class="nav-list row py-3">
-        <div class="btn btn-success col-md-8">
-          <div class="d-flex justify-content-center text-center gx-5 position-relative">
-            <div class="me-2">
-              <button type="button" class="btn btn-primary w-100 text-white">專屬推薦</button>  
-            </div>
+      <a href="login.html">
+        <div class="nav-list row py-3">
+          <div class="btn btn-success col-md-8">
+            <div class="d-flex justify-content-center text-align-center g-5 m-5">
+              <div>
+                
+                <button type="button" class="btn btn-primary w-100 text-white">專屬推薦</button>
+                
+              </div>
 
-            <div class="text-start text-white">
-              <p class="fs-5 me-3">專屬推薦旅程規劃</p>
-              <p class="fs-6 me-3">依您的喜好推薦旅程選擇</p>
-            </div>
-            <div class="position-absolute bottom-10 end-0">
-              <img src="../assets/images/index-bg-arrow.svg" alt="">
-            </div>
-          </div>   
+              <div class="text-start text-white">
+                <p class="fs-5 mx-3">專屬推薦旅程規劃</p>
+                <p class="fs-6 mx-3">依您的喜好推薦旅程選擇</p>
+              </div>
+              <div >
+                <img src="../assets/images/index-bg-arrow.svg" class="m-3" alt="">
+              </div>
+            </div>   
+          </div>
+          <div class="col-md-4">   
+          </div>  
+      
         </div>
-        <div class="col-md-4">   
-        </div>   
-    
-      </div>
+      </a>
 
-      <!--收蔵一覽-->
+      <!--收藏一覽-->
       <div class="nav-list row py-3">
         <div class="col-md-4">   
         </div>
         <div class="btn btn-success col-md-8">
-          <div class="d-flex justify-content-start text-center gx-5">
+          <div class="d-flex justify-content-start text-align-center gx-5">
             <div class="me-2">
-              <button type="button" class="btn btn-primary text-white">收蔵一覽</button>  
+              <button type="button" class="btn btn-primary text-white mx-3">收藏一覽</button>  
             </div>
             <div class="text-start text-white">
-              <p class="fs-5 me-3">專屬收藏內容</p>
-              <p class="fs-6 me-3">關鍵字搜尋收藏旅程</p>
-              <p class="fs-6 me-3">訂單清楚查找</p>
+              <p class="fs-5 mx-3">專屬收藏內容</p>
+              <p class="fs-6 mx-3">關鍵字搜尋收藏旅程</p>
+              <p class="fs-6 mx-3">訂單清楚查找</p>
             </div>
             <div>
               <img src="../assets/images/index-bg-list.svg" alt="">
@@ -221,13 +307,17 @@
       </div>
 
       <!---->
-      <div class="container-fluid mt-3 text-center">
+      <div class="container-fluid row row-col-1">
+        <div class="col justify-content-center text-align-center p-5 text-center">
         <p>無論你是尋求冒險、文化探索、還是純粹的放鬆，東南亞都能為您提供多樣化的旅遊選擇</p>
+        </div>
       </div>
 
       <!--馬上加入-->
       <div class="text-center p-5">
+        <a href="login.html">
         <button type="button" class="btn btn-success btn-lg text-white mx-5">馬上加入</button>
+        </a>
       </div>
 
     <!-- Swiper JS -->
