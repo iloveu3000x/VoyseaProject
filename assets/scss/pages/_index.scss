@@ -299,3 +299,92 @@
   width: 100%;
 }
 
+
+
+
+//
+
+
+//無論你是尋求冒險、文化探索、還是純粹的放鬆，東南亞都能為您提供多樣化的旅遊選擇
+.custom-content {
+  color: #555;
+  background-color: #f5f5f5;
+//  padding: 10px;
+  border-radius: 5px;
+//  text-align: center;
+}
+
+//index搜尋
+.search-section {
+  background-color: #3BD2B7;
+}
+
+.search-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100px;
+  right: -50px;
+  z-index: 10;
+  width: 80%;
+  max-width: 500px;
+}
+
+.search-box h2 {
+  font-size: 2rem;
+  color: #17a2b8;
+}
+
+.search-box p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.input-group .form-control {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.input-group .btn {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.img-fluid {
+  border-radius: 10px;
+}
+
+/* RWD 設計 */
+@media (max-width: 768px) {
+  .search-box {
+      position: relative;
+      width: 100%;
+      margin-top: 20px;
+      right: 0;
+      top: 0;
+  }
+
+  .image-wrapper {
+      text-align: center;
+  }
+  
+  .img-fluid {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-box h2 {
+      font-size: 1.5rem;
+  }
+  
+  .search-box p {
+      font-size: 0.9rem;
+  }
+}
+//index搜尋END
