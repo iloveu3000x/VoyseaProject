@@ -15,93 +15,92 @@
     <!-- 購物車-->
     <div class="container">
         <h2 class="mt-5 text-center">訂單明細</h2>
-        <table class="table cart-table">
-            <thead>
-                <tr>
-                    <th>請勾選行程</th>
-                    <th>商品名稱</th>
-                    <th>日期</th>
-                    <th>人數</th>
-                    <th>金額</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- 行程1 -->
-                <tr>
-                    <td>
-                        <input type="checkbox" checked>
-                    </td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <img src="../assets/images/Bangkok.jpg" width="80" height="60" alt="Bangkok">
-                            <span class="ms-3">曼谷自由行</span>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="d-flex">
-                            <input type="date" class="form-control me-2" value="2024-11-12">
-                            <span>~</span>
-                            <input type="date" class="form-control ms-2" value="2024-11-16">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="quantity-controls">
-                            <button class="btn">-</button>
-                            <input type="text text-end" value="1">
-                            <button class="btn">+</button>
-                        </div>
-                    </td>
-                    <td>NT $28,800/人</td>
-                </tr>
-                
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table cart-table">
+                <thead>
+                    <tr>
+                        <th>請勾選行程</th>
+                        <th>商品名稱</th>
+                        <th>日期</th>
+                        <th>人數</th>
+                        <th>金額</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 行程1 -->
+                    <tr>
+                        <td>
+                            <input type="checkbox" checked>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                                <a href="product.html">
+                                <img src="../assets/images/Bangkok.jpg" class="img-fluid" style="width: 80px; height: 60px;" alt="Bangkok">
+                                </a>
+                                <a href="product.html"><span class="ms-3">曼谷自由行</span></a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column flex-md-row">
+                                <input type="date" class="form-control me-md-2 mb-2 mb-md-0" value="2024-11-12">
+                                <span class="d-none d-md-inline">~</span>
+                                <input type="date" class="form-control ms-md-2" value="2024-11-16">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <button class="btn btn-outline-secondary btn-sm">-</button>
+                                <input type="text" class="form-control text-end mx-2" value="1" style="width: 50px;">
+                                <button class="btn btn-outline-secondary btn-sm">+</button>
+                            </div>
+                        </td>
+                        <td>NT $28,800/人</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <!--小計-->
     <div class="container my-5">
         <div class="row">
-    
             <!-- Discount Code Section -->
-            <div class="col-md-6">
+            <div class="col-md-6 mb-3 mb-md-0">
                 <h5>折扣碼：</h5>
                 <form class="form-inline">
                     <div class="form-group mb-2">
                         <input type="text" class="form-control" id="discountCode" placeholder="Discount2024">
                     </div>
-                
                 </form>
-                <a href="login.html" class="text-muted">查看更多優惠碼</a>
+                <a href="login.html" class="text-primary">查看更多優惠碼</a>
             </div>
-    
+
             <!-- Payment Summary Section -->
             <div class="col-md-6">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th colspan="1" class="text-end">付款資訊</th>
+                            <th colspan="2" class="text-end">付款資訊</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>小計</td>
-                            <td class="text-end m-3">NT$28,800</td>
+                            <td class="text-end">NT$28,800</td>
                         </tr>
                         <tr>
                             <td>折扣碼</td>
-                            <td class="text-end  m-3 text-danger">-NT$500</td>
+                            <td class="text-end text-danger">-NT$500</td>
                         </tr>
                         <tr>
                             <td class="text-danger">合計</td>
-                            <td class="text-end m-3">NT$28,300</td>
+                            <td class="text-end">NT$28,300</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-    
         </div>
     </div>
-
 
     <script type="module" src="../main.js"></script>
 </body>
